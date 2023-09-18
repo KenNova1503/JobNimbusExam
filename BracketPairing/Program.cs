@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var bracketPair = new BracketPair();
+            var result = bracketPair.HasBracketMatches("<abc...xyz>");
+            Console.WriteLine(result);
+            Console.ReadLine();
         }
     }
 }
