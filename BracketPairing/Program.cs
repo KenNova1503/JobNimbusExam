@@ -5,8 +5,14 @@
         static void Main(string[] args)
         {
             var bracketPair = new BracketPair();
-            var result = bracketPair.HasBracketMatches("<abc...xyz>");
-            Console.WriteLine(result);
+            string[] inputs = { "<>", "><", "<<>", "\"\"", "<abc...xyz>" };
+
+            foreach (var input in inputs)
+            {
+                var result = bracketPair.HasBracketMatches(input);
+                Console.WriteLine(result);
+            }
+
             Console.ReadLine();
         }
     }
